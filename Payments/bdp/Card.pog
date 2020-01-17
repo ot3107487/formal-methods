@@ -1,0 +1,3842 @@
+<Proof_Obligations>
+<Define merge="=" name="B definitions">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="NAT"/>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT"/>
+<Binary_Exp op="..">
+<Id value="MININT"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define merge="=" name="ctx">
+<Attr>
+<Pos s="4" l="3" c="1"/>
+</Attr>
+<Set>
+<Id value="STR" typref="116733260" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\String.bxml:1:1:1:1">
+<Attr>
+<Pos s="3" l="4" c="5"/>
+</Attr>
+</Id>
+</Set>
+</Define>
+<Define merge="=" name="seext"/>
+<Define merge="=" name="lprp">
+<Attr>
+<Pos s="4" l="9" c="1"/>
+</Attr>
+<Set>
+<Id value="CARDS" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:4:1:1">
+<Attr>
+<Pos s="5" l="10" c="5"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:4:2:1">
+<Attr>
+<Pos s="5" l="10" c="12"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="VISA" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:4:2:2:1">
+<Attr>
+<Pos s="4" l="10" c="21"/>
+</Attr>
+</Id>
+<Id value="VIRTUAL" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:4:2:2:2">
+<Attr>
+<Pos s="7" l="10" c="27"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Attr>
+<Pos s="10" l="13" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="14" c="13"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:1:1">
+<Attr>
+<Pos s="7" l="14" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="112170744">
+<Attr>
+<Pos s="3" l="14" c="21"/>
+</Attr>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:1:2:1">
+<Attr>
+<Pos s="5" l="14" c="15"/>
+</Attr>
+</Id>
+<Id value="NATURAL" typref="3603043417" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:1:2:2">
+<Attr>
+<Pos s="7" l="14" c="25"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="15" c="13"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:1">
+<Attr>
+<Pos s="7" l="15" c="5"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="55458379">
+<Attr>
+<Pos s="1" l="15" c="15"/>
+</Attr>
+<Binary_Exp op="|->" typref="3223677880">
+<Attr>
+<Pos s="3" l="15" c="22"/>
+</Attr>
+<Id value="VISA" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:2:1:1">
+<Attr>
+<Pos s="4" l="15" c="17"/>
+</Attr>
+</Id>
+<Integer_Literal value="22" typref="2701647786" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:2:1:2">
+<Attr>
+<Pos s="2" l="15" c="25"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op="|->" typref="3223677880">
+<Attr>
+<Pos s="3" l="15" c="39"/>
+</Attr>
+<Id value="VIRTUAL" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:2:2:1">
+<Attr>
+<Pos s="7" l="15" c="31"/>
+</Attr>
+</Id>
+<Integer_Literal value="14" typref="2701647786" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:2:2:2">
+<Attr>
+<Pos s="2" l="15" c="43"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define merge="=" name="inprp">
+<Attr>
+<Pos s="4" l="5" c="1"/>
+</Attr>
+<Set>
+<Id value="PERSON" typref="917286058" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:2:1:1">
+<Attr>
+<Pos s="6" l="6" c="5"/>
+</Attr>
+</Id>
+</Set>
+</Define>
+<Define merge="=" name="inext">
+<Attr>
+<Pos s="9" l="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="&lt;:" initialTag="person : POW( PERSON)">
+<Attr>
+<Pos s="2" l="10" c="12"/>
+</Attr>
+<Id value="person" typref="917286058" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:1:1">
+<Attr>
+<Pos s="6" l="10" c="5"/>
+</Attr>
+</Id>
+<Id value="PERSON" typref="917286058" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:1:2">
+<Attr>
+<Pos s="6" l="10" c="15"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((person_name) : (((person) --> (STR))))">
+<Attr>
+<Pos s="1" l="11" c="17"/>
+</Attr>
+<Id value="person_name" typref="2989697570" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:2:1">
+<Attr>
+<Pos s="11" l="11" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="2122796599">
+<Attr>
+<Pos s="3" l="11" c="26"/>
+</Attr>
+<Id value="person" typref="917286058" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:2:2:1">
+<Attr>
+<Pos s="6" l="11" c="19"/>
+</Attr>
+</Id>
+<Id value="STR" typref="116733260" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:2:2:2">
+<Attr>
+<Pos s="3" l="11" c="30"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((person_age) : (((person) --> (NATURAL))))">
+<Attr>
+<Pos s="1" l="12" c="16"/>
+</Attr>
+<Id value="person_age" typref="3435983791" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:3:1">
+<Attr>
+<Pos s="10" l="12" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="351536106">
+<Attr>
+<Pos s="3" l="12" c="25"/>
+</Attr>
+<Id value="person" typref="917286058" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:3:2:1">
+<Attr>
+<Pos s="6" l="12" c="18"/>
+</Attr>
+</Id>
+<Id value="NATURAL" typref="3603043417" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:3:2:2">
+<Attr>
+<Pos s="7" l="12" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define merge="=" name="inv">
+<Attr>
+<Pos s="9" l="18" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="&lt;:" initialTag="cards : POW( CARDS)">
+<Attr>
+<Pos s="2" l="19" c="11"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:1:1">
+<Attr>
+<Pos s="5" l="19" c="5"/>
+</Attr>
+</Id>
+<Id value="CARDS" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:1:2">
+<Attr>
+<Pos s="5" l="19" c="14"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((iban) : (((cards) --> (STR))))">
+<Attr>
+<Pos s="1" l="20" c="10"/>
+</Attr>
+<Id value="iban" typref="1674400392" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:2:1">
+<Attr>
+<Pos s="4" l="20" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="3390175739">
+<Attr>
+<Pos s="3" l="20" c="18"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:2:2:1">
+<Attr>
+<Pos s="5" l="20" c="12"/>
+</Attr>
+</Id>
+<Id value="STR" typref="116733260" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:2:2:2">
+<Attr>
+<Pos s="3" l="20" c="22"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((type) : (((cards) --> (TYPES))))">
+<Attr>
+<Pos s="1" l="21" c="10"/>
+</Attr>
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:3:1">
+<Attr>
+<Pos s="4" l="21" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="2714425715">
+<Attr>
+<Pos s="3" l="21" c="18"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:3:2:1">
+<Attr>
+<Pos s="5" l="21" c="12"/>
+</Attr>
+</Id>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:3:2:2">
+<Attr>
+<Pos s="5" l="21" c="22"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((holder) : (((cards) --> (person))))">
+<Attr>
+<Pos s="1" l="22" c="12"/>
+</Attr>
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:4:1">
+<Attr>
+<Pos s="6" l="22" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="3777709295">
+<Attr>
+<Pos s="3" l="22" c="20"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:4:2:1">
+<Attr>
+<Pos s="5" l="22" c="14"/>
+</Attr>
+</Id>
+<Id value="person" typref="917286058" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:4:2:2">
+<Attr>
+<Pos s="6" l="22" c="24"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Quantified_Pred type="!" initialTag="!(crd).(((((crd) : (cards))) => (((min_age )((type )(crd)) &lt;= (person_age )((holder )(crd))))))">
+<Attr>
+<Pos s="1" l="23" c="10"/>
+</Attr>
+<Variables>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:5:1:1">
+<Attr>
+<Pos s="3" l="23" c="6"/>
+</Attr>
+</Id>
+</Variables>
+<Body>
+<Binary_Pred op="=>">
+<Attr>
+<Pos s="2" l="23" c="25"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="23" c="17"/>
+</Attr>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:5:2:1:1:1">
+<Attr>
+<Pos s="3" l="23" c="13"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:5:2:1:1:2">
+<Attr>
+<Pos s="5" l="23" c="19"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=">=">
+<Attr>
+<Pos s="2" l="23" c="52"/>
+</Attr>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="23" c="38"/>
+</Attr>
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:5:2:1:2:1:1">
+<Attr>
+<Pos s="10" l="23" c="28"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="555065967">
+<Attr>
+<Pos s="0" l="23" c="45"/>
+</Attr>
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:5:2:1:2:1:2:1">
+<Attr>
+<Pos s="6" l="23" c="39"/>
+</Attr>
+</Id>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:5:2:1:2:1:2:2">
+<Attr>
+<Pos s="3" l="23" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="23" c="62"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:5:2:1:2:2:1">
+<Attr>
+<Pos s="7" l="23" c="55"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="1714691695">
+<Attr>
+<Pos s="0" l="23" c="67"/>
+</Attr>
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:5:2:1:2:2:2:1">
+<Attr>
+<Pos s="4" l="23" c="63"/>
+</Attr>
+</Id>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:5:2:1:2:2:2:2">
+<Attr>
+<Pos s="3" l="23" c="68"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Body>
+</Quantified_Pred>
+</Nary_Pred>
+</Define>
+<Define merge="=" name="ass"/>
+<Define merge="=" name="cst"/>
+<Proof_Obligation>
+<Comment>Inclusion dans une machine abstraite</Comment>
+<Tag>InstanciatedConstraintsLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Inclusion dans une machine abstraite</Comment>
+<Tag>InstanciatedConstraintsLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Initialisation dans une machine abstraite</Comment>
+<Tag>Initialisation</Tag>
+<Tag>Invariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="21" c="17"/>
+</Attr>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:1:1">
+<Attr>
+<Pos s="3" l="21" c="13"/>
+</Attr>
+</Id>
+<EmptySet typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:1:2,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:1:1:1">
+<Attr>
+<Pos s="5" l="23" c="5"/>
+</Attr>
+</EmptySet>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos s="9" l="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="&lt;:" initialTag="person : POW( PERSON)">
+<Attr>
+<Pos s="2" l="10" c="12"/>
+</Attr>
+<EmptySet typref="917286058" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:1:2:1,C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:1:1,C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:1:1:1">
+<Attr>
+<Pos s="6" l="14" c="5"/>
+</Attr>
+</EmptySet>
+<Id value="PERSON" typref="917286058" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:1:2">
+<Attr>
+<Pos s="6" l="10" c="15"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((person_name) : (((person) --> (STR))))">
+<Attr>
+<Pos s="1" l="11" c="17"/>
+</Attr>
+<EmptySet typref="2989697570" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:2:2:1,C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:2:1,C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:2:1:1">
+<Attr>
+<Pos s="11" l="14" c="21"/>
+</Attr>
+</EmptySet>
+<Binary_Exp op="-->" typref="2122796599">
+<Attr>
+<Pos s="3" l="11" c="26"/>
+</Attr>
+<EmptySet typref="917286058" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:1:2:1,C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:2:2:1,C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:1:1:1">
+<Attr>
+<Pos s="6" l="14" c="5"/>
+</Attr>
+</EmptySet>
+<Id value="STR" typref="116733260" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:2:2:2">
+<Attr>
+<Pos s="3" l="11" c="30"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((person_age) : (((person) --> (NATURAL))))">
+<Attr>
+<Pos s="1" l="12" c="16"/>
+</Attr>
+<EmptySet typref="3435983791" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:3:2:1,C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:3:1,C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:3:1:1">
+<Attr>
+<Pos s="10" l="14" c="42"/>
+</Attr>
+</EmptySet>
+<Binary_Exp op="-->" typref="351536106">
+<Attr>
+<Pos s="3" l="12" c="25"/>
+</Attr>
+<EmptySet typref="917286058" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:1:2:1,C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:3:2:1,C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:1:1:1">
+<Attr>
+<Pos s="6" l="14" c="5"/>
+</Attr>
+</EmptySet>
+<Id value="NATURAL" typref="3603043417" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:4:1:3:2:2">
+<Attr>
+<Pos s="7" l="12" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Ref_Hyp num="2"/>
+<Exp_Comparison op="&lt;:" initialTag="cards : POW( CARDS)" goalTag="Invariant is preserved">
+<Attr>
+<Pos s="2" l="17" c="11"/>
+</Attr>
+<EmptySet typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:1:1:1">
+<Attr>
+<Pos s="5" l="23" c="5"/>
+</Attr>
+</EmptySet>
+<Id value="CARDS" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:1:2">
+<Attr>
+<Pos s="5" l="17" c="14"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+<iapa/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Ref_Hyp num="2"/>
+<Exp_Comparison op=":" initialTag="((type) : (((cards) --> (TYPES))))" goalTag="Invariant is preserved">
+<Attr>
+<Pos s="1" l="19" c="10"/>
+</Attr>
+<EmptySet typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:3:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:3:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:3:1:1">
+<Attr>
+<Pos s="4" l="25" c="5"/>
+</Attr>
+</EmptySet>
+<Binary_Exp op="-->" typref="2714425715">
+<Attr>
+<Pos s="3" l="19" c="18"/>
+</Attr>
+<EmptySet typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:3:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:1:1:1">
+<Attr>
+<Pos s="5" l="23" c="5"/>
+</Attr>
+</EmptySet>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:3:2:2">
+<Attr>
+<Pos s="5" l="19" c="22"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+<iapa/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Ref_Hyp num="2"/>
+<Exp_Comparison op=":" initialTag="((holder) : (((cards) --> (person))))" goalTag="Invariant is preserved">
+<Attr>
+<Pos s="1" l="20" c="12"/>
+</Attr>
+<EmptySet typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:4:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:4:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:4:1:1">
+<Attr>
+<Pos s="6" l="26" c="5"/>
+</Attr>
+</EmptySet>
+<Binary_Exp op="-->" typref="3777709295">
+<Attr>
+<Pos s="3" l="20" c="20"/>
+</Attr>
+<EmptySet typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:4:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:1:1:1">
+<Attr>
+<Pos s="5" l="23" c="5"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="917286058" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:4:2:2,C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:1:1:1">
+<Attr>
+<Pos s="6" l="14" c="5"/>
+</Attr>
+</EmptySet>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+<iapa/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=">=">
+<Attr>
+<Pos s="2" l="21" c="52"/>
+</Attr>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="21" c="38"/>
+</Attr>
+<EmptySet typref="3435983791" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:3:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:1,C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:5:1:3:1:1">
+<Attr>
+<Pos s="10" l="14" c="42"/>
+</Attr>
+</EmptySet>
+<Binary_Exp op="(" typref="555065967">
+<Attr>
+<Pos s="0" l="21" c="45"/>
+</Attr>
+<EmptySet typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:4:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:4:1:1">
+<Attr>
+<Pos s="6" l="26" c="5"/>
+</Attr>
+</EmptySet>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:2">
+<Attr>
+<Pos s="3" l="21" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="21" c="62"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:1">
+<Attr>
+<Pos s="7" l="21" c="55"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="1714691695">
+<Attr>
+<Pos s="0" l="21" c="67"/>
+</Attr>
+<EmptySet typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:3:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:8:1:3:1:1">
+<Attr>
+<Pos s="4" l="25" c="5"/>
+</Attr>
+</EmptySet>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:2">
+<Attr>
+<Pos s="3" l="21" c="68"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>create_cards</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="20"/>
+</Attr>
+<Id value="iban_value" typref="2678451703" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:1:1">
+<Attr>
+<Pos s="10" l="33" c="9"/>
+</Attr>
+</Id>
+<Id value="STR" typref="116733260" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:1:2">
+<Attr>
+<Pos s="3" l="33" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="34" c="20"/>
+</Attr>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:2:1">
+<Attr>
+<Pos s="10" l="34" c="9"/>
+</Attr>
+</Id>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:2:2">
+<Attr>
+<Pos s="5" l="34" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="35" c="22"/>
+</Attr>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:3:1">
+<Attr>
+<Pos s="12" l="35" c="9"/>
+</Attr>
+</Id>
+<Id value="person" typref="917286058" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:3:2">
+<Attr>
+<Pos s="6" l="35" c="24"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=">=">
+<Attr>
+<Pos s="2" l="36" c="34"/>
+</Attr>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="36" c="19"/>
+</Attr>
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:4:1:1">
+<Attr>
+<Pos s="10" l="36" c="9"/>
+</Attr>
+</Id>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:4:1:2">
+<Attr>
+<Pos s="12" l="36" c="20"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="36" c="44"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:4:2:1">
+<Attr>
+<Pos s="7" l="36" c="37"/>
+</Attr>
+</Id>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:4:2:2">
+<Attr>
+<Pos s="10" l="36" c="45"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="21" c="17"/>
+</Attr>
+<Id value="crd" suffix="2" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:1:1">
+<Attr>
+<Pos s="3" l="21" c="13"/>
+</Attr>
+</Id>
+<Binary_Exp op="\/" typref="3240719902" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:1:2,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:1:1">
+<Attr>
+<Pos s="5" l="38" c="14"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:2:1:1">
+<Attr>
+<Pos s="5" l="38" c="23"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="3240719902">
+<Attr>
+<Pos s="1" l="38" c="32"/>
+</Attr>
+<Id value="crd" suffix="1" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:2:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1">
+<Attr>
+<Pos s="3" l="36" c="13"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+<Local_Hyp num="3">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="37" c="19"/>
+</Attr>
+<Id value="crd" suffix="1" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:2:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1">
+<Attr>
+<Pos s="3" l="36" c="13"/>
+</Attr>
+</Id>
+<Binary_Exp op="-" typref="3240719902">
+<Attr>
+<Pos s="1" l="37" c="27"/>
+</Attr>
+<Id value="CARDS" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:2:1:2:1">
+<Attr>
+<Pos s="5" l="37" c="21"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:2:1:2:2">
+<Attr>
+<Pos s="5" l="37" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;:" initialTag="cards : POW( CARDS)" goalTag="Invariant is preserved">
+<Attr>
+<Pos s="2" l="17" c="11"/>
+</Attr>
+<Binary_Exp op="\/" typref="3240719902" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:1:1">
+<Attr>
+<Pos s="5" l="38" c="14"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:2:1:1">
+<Attr>
+<Pos s="5" l="38" c="23"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="3240719902">
+<Attr>
+<Pos s="1" l="38" c="32"/>
+</Attr>
+<Id value="crd" suffix="1" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:2:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1">
+<Attr>
+<Pos s="3" l="36" c="13"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Id value="CARDS" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:1:2">
+<Attr>
+<Pos s="5" l="17" c="14"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op=":" initialTag="((iban) : (((cards) --> (STR))))" goalTag="Invariant is preserved">
+<Attr>
+<Pos s="1" l="18" c="10"/>
+</Attr>
+<Binary_Exp op="&lt;+" typref="1674400392" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:2:1:1:1">
+<Id value="iban" typref="1674400392" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:2:1:1:1">
+<Attr>
+<Pos s="4" l="39" c="14"/>
+</Attr>
+</Id>
+<Nary_Exp op="{">
+<Binary_Exp op="|->">
+<Id value="crd" suffix="1" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:2:1:1:2,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1">
+<Attr>
+<Pos s="3" l="36" c="13"/>
+</Attr>
+</Id>
+<Id value="iban_value" typref="2678451703" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:2:2:1">
+<Attr>
+<Pos s="10" l="39" c="27"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp op="-->" typref="3390175739">
+<Attr>
+<Pos s="3" l="18" c="18"/>
+</Attr>
+<Binary_Exp op="\/" typref="3240719902" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:1:1">
+<Attr>
+<Pos s="5" l="38" c="14"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:2:1:1">
+<Attr>
+<Pos s="5" l="38" c="23"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="3240719902">
+<Attr>
+<Pos s="1" l="38" c="32"/>
+</Attr>
+<Id value="crd" suffix="1" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:2:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1">
+<Attr>
+<Pos s="3" l="36" c="13"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Id value="STR" typref="116733260" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:2:2">
+<Attr>
+<Pos s="3" l="18" c="22"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op=":" initialTag="((type) : (((cards) --> (TYPES))))" goalTag="Invariant is preserved">
+<Attr>
+<Pos s="1" l="19" c="10"/>
+</Attr>
+<Binary_Exp op="&lt;+" typref="1550672528" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:3:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:3:1:1:1">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:3:1:1:1">
+<Attr>
+<Pos s="4" l="40" c="14"/>
+</Attr>
+</Id>
+<Nary_Exp op="{">
+<Binary_Exp op="|->">
+<Id value="crd" suffix="1" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:3:1:1:2,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1">
+<Attr>
+<Pos s="3" l="36" c="13"/>
+</Attr>
+</Id>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:3:2:1">
+<Attr>
+<Pos s="10" l="40" c="27"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp op="-->" typref="2714425715">
+<Attr>
+<Pos s="3" l="19" c="18"/>
+</Attr>
+<Binary_Exp op="\/" typref="3240719902" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:3:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:1:1">
+<Attr>
+<Pos s="5" l="38" c="14"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:2:1:1">
+<Attr>
+<Pos s="5" l="38" c="23"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="3240719902">
+<Attr>
+<Pos s="1" l="38" c="32"/>
+</Attr>
+<Id value="crd" suffix="1" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:2:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1">
+<Attr>
+<Pos s="3" l="36" c="13"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:3:2:2">
+<Attr>
+<Pos s="5" l="19" c="22"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op=":" initialTag="((holder) : (((cards) --> (person))))" goalTag="Invariant is preserved">
+<Attr>
+<Pos s="1" l="20" c="12"/>
+</Attr>
+<Binary_Exp op="&lt;+" typref="3079309290" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:4:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:4:1:1:1">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:4:1:1:1">
+<Attr>
+<Pos s="6" l="41" c="14"/>
+</Attr>
+</Id>
+<Nary_Exp op="{">
+<Binary_Exp op="|->">
+<Id value="crd" suffix="1" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:4:1:1:2,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1">
+<Attr>
+<Pos s="3" l="36" c="13"/>
+</Attr>
+</Id>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:4:2:1">
+<Attr>
+<Pos s="12" l="41" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp op="-->" typref="3777709295">
+<Attr>
+<Pos s="3" l="20" c="20"/>
+</Attr>
+<Binary_Exp op="\/" typref="3240719902" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:4:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:1:1">
+<Attr>
+<Pos s="5" l="38" c="14"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:2:1:1">
+<Attr>
+<Pos s="5" l="38" c="23"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="3240719902">
+<Attr>
+<Pos s="1" l="38" c="32"/>
+</Attr>
+<Id value="crd" suffix="1" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:1:2:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1">
+<Attr>
+<Pos s="3" l="36" c="13"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Id value="person" typref="917286058" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:4:2:2">
+<Attr>
+<Pos s="6" l="20" c="24"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=">=">
+<Attr>
+<Pos s="2" l="21" c="52"/>
+</Attr>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="21" c="38"/>
+</Attr>
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:1">
+<Attr>
+<Pos s="10" l="21" c="28"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="555065967">
+<Attr>
+<Pos s="0" l="21" c="45"/>
+</Attr>
+<Binary_Exp op="&lt;+" typref="3079309290" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:4:1:1:1">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:4:1:1:1">
+<Attr>
+<Pos s="6" l="41" c="14"/>
+</Attr>
+</Id>
+<Nary_Exp op="{">
+<Binary_Exp op="|->">
+<Id value="crd" suffix="1" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:4:1:1:2,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1">
+<Attr>
+<Pos s="3" l="36" c="13"/>
+</Attr>
+</Id>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:4:2:1">
+<Attr>
+<Pos s="12" l="41" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+<Id value="crd" suffix="2" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:2">
+<Attr>
+<Pos s="3" l="21" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="21" c="62"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:1">
+<Attr>
+<Pos s="7" l="21" c="55"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="1714691695">
+<Attr>
+<Pos s="0" l="21" c="67"/>
+</Attr>
+<Binary_Exp op="&lt;+" typref="1550672528" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:3:1:1:1">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:3:1:1:1">
+<Attr>
+<Pos s="4" l="40" c="14"/>
+</Attr>
+</Id>
+<Nary_Exp op="{">
+<Binary_Exp op="|->">
+<Id value="crd" suffix="1" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:3:1:1:2,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:1:1">
+<Attr>
+<Pos s="3" l="36" c="13"/>
+</Attr>
+</Id>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:3:1:3:2:1">
+<Attr>
+<Pos s="10" l="40" c="27"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+<Id value="crd" suffix="2" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:2">
+<Attr>
+<Pos s="3" l="21" c="68"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>get_iban</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="50" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:2:3:1:1">
+<Attr>
+<Pos s="11" l="50" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:2:3:1:2">
+<Attr>
+<Pos s="5" l="50" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>get_type</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="57" c="20"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:3:3:1:1">
+<Attr>
+<Pos s="11" l="57" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:3:3:1:2">
+<Attr>
+<Pos s="5" l="57" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>get_holder</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="64" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:4:3:1:1">
+<Attr>
+<Pos s="11" l="64" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:4:3:1:2">
+<Attr>
+<Pos s="5" l="64" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>set_cards_iban</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="71" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:5:2:1:1:1">
+<Attr>
+<Pos s="11" l="71" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:5:2:1:1:2">
+<Attr>
+<Pos s="5" l="71" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="72" c="20"/>
+</Attr>
+<Id value="iban_value" typref="2678451703" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:5:2:1:2:1">
+<Attr>
+<Pos s="10" l="72" c="9"/>
+</Attr>
+</Id>
+<Id value="STR" typref="116733260" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:5:2:1:2:2">
+<Attr>
+<Pos s="3" l="72" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Ref_Hyp num="1"/>
+<Exp_Comparison op=":" initialTag="((iban) : (((cards) --> (STR))))" goalTag="Invariant is preserved">
+<Attr>
+<Pos s="1" l="18" c="10"/>
+</Attr>
+<Binary_Exp op="&lt;+" typref="1674400392" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:5:3:1:1:1:1">
+<Id value="iban" typref="1674400392" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:5:3:1:1:1:1">
+<Attr>
+<Pos s="4" l="72" c="9"/>
+</Attr>
+</Id>
+<Nary_Exp op="{">
+<Binary_Exp op="|->">
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:5:3:1:1:1:2">
+<Attr>
+<Pos s="11" l="72" c="14"/>
+</Attr>
+</Id>
+<Id value="iban_value" typref="2678451703" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:5:3:1:2:1">
+<Attr>
+<Pos s="10" l="72" c="30"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp op="-->" typref="3390175739">
+<Attr>
+<Pos s="3" l="18" c="18"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:2:1">
+<Attr>
+<Pos s="5" l="18" c="12"/>
+</Attr>
+</Id>
+<Id value="STR" typref="116733260" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:2:2">
+<Attr>
+<Pos s="3" l="18" c="22"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+<iapa/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>set_cards_type</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="79" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:1:1">
+<Attr>
+<Pos s="11" l="79" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:1:2">
+<Attr>
+<Pos s="5" l="79" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="80" c="20"/>
+</Attr>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:2:1">
+<Attr>
+<Pos s="10" l="80" c="9"/>
+</Attr>
+</Id>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:2:2">
+<Attr>
+<Pos s="5" l="80" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=">=">
+<Attr>
+<Pos s="2" l="81" c="41"/>
+</Attr>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="81" c="19"/>
+</Attr>
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:3:1:1">
+<Attr>
+<Pos s="10" l="81" c="9"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="555065967">
+<Attr>
+<Pos s="0" l="81" c="26"/>
+</Attr>
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:3:1:2:1">
+<Attr>
+<Pos s="6" l="81" c="20"/>
+</Attr>
+</Id>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:3:1:2:2">
+<Attr>
+<Pos s="11" l="81" c="27"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="81" c="51"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:3:2:1">
+<Attr>
+<Pos s="7" l="81" c="44"/>
+</Attr>
+</Id>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:3:2:2">
+<Attr>
+<Pos s="10" l="81" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="21" c="17"/>
+</Attr>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:1:1">
+<Attr>
+<Pos s="3" l="21" c="13"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:1:2">
+<Attr>
+<Pos s="5" l="21" c="19"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Ref_Hyp num="2"/>
+<Exp_Comparison op=":" initialTag="((type) : (((cards) --> (TYPES))))" goalTag="Invariant is preserved">
+<Attr>
+<Pos s="1" l="19" c="10"/>
+</Attr>
+<Binary_Exp op="&lt;+" typref="1550672528" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:3:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:3:1:1:1:1">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:3:1:1:1:1">
+<Attr>
+<Pos s="4" l="81" c="9"/>
+</Attr>
+</Id>
+<Nary_Exp op="{">
+<Binary_Exp op="|->">
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:3:1:1:1:2">
+<Attr>
+<Pos s="11" l="81" c="14"/>
+</Attr>
+</Id>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:3:1:2:1">
+<Attr>
+<Pos s="10" l="81" c="30"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp op="-->" typref="2714425715">
+<Attr>
+<Pos s="3" l="19" c="18"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:3:2:1">
+<Attr>
+<Pos s="5" l="19" c="12"/>
+</Attr>
+</Id>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:3:2:2">
+<Attr>
+<Pos s="5" l="19" c="22"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+<iapa/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=">=">
+<Attr>
+<Pos s="2" l="21" c="52"/>
+</Attr>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="21" c="38"/>
+</Attr>
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:1">
+<Attr>
+<Pos s="10" l="21" c="28"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="555065967">
+<Attr>
+<Pos s="0" l="21" c="45"/>
+</Attr>
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:1">
+<Attr>
+<Pos s="6" l="21" c="39"/>
+</Attr>
+</Id>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:2">
+<Attr>
+<Pos s="3" l="21" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="21" c="62"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:1">
+<Attr>
+<Pos s="7" l="21" c="55"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="1714691695">
+<Attr>
+<Pos s="0" l="21" c="67"/>
+</Attr>
+<Binary_Exp op="&lt;+" typref="1550672528" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:3:1:1:1:1">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:3:1:1:1:1">
+<Attr>
+<Pos s="4" l="81" c="9"/>
+</Attr>
+</Id>
+<Nary_Exp op="{">
+<Binary_Exp op="|->">
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:3:1:1:1:2">
+<Attr>
+<Pos s="11" l="81" c="14"/>
+</Attr>
+</Id>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:3:1:2:1">
+<Attr>
+<Pos s="10" l="81" c="30"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:2">
+<Attr>
+<Pos s="3" l="21" c="68"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>set_cards_holder</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="88" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:1:1">
+<Attr>
+<Pos s="11" l="88" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:1:2">
+<Attr>
+<Pos s="5" l="88" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="89" c="22"/>
+</Attr>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:2:1">
+<Attr>
+<Pos s="12" l="89" c="9"/>
+</Attr>
+</Id>
+<Id value="person" typref="917286058" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:2:2">
+<Attr>
+<Pos s="6" l="89" c="24"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=">=">
+<Attr>
+<Pos s="2" l="90" c="34"/>
+</Attr>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="90" c="19"/>
+</Attr>
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:3:1:1">
+<Attr>
+<Pos s="10" l="90" c="9"/>
+</Attr>
+</Id>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:3:1:2">
+<Attr>
+<Pos s="12" l="90" c="20"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="90" c="44"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:3:2:1">
+<Attr>
+<Pos s="7" l="90" c="37"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="1714691695">
+<Attr>
+<Pos s="0" l="90" c="49"/>
+</Attr>
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:3:2:2:1">
+<Attr>
+<Pos s="4" l="90" c="45"/>
+</Attr>
+</Id>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:3:2:2:2">
+<Attr>
+<Pos s="11" l="90" c="50"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="21" c="17"/>
+</Attr>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:1:1">
+<Attr>
+<Pos s="3" l="21" c="13"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:1:2">
+<Attr>
+<Pos s="5" l="21" c="19"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Ref_Hyp num="2"/>
+<Exp_Comparison op=":" initialTag="((holder) : (((cards) --> (person))))" goalTag="Invariant is preserved">
+<Attr>
+<Pos s="1" l="20" c="12"/>
+</Attr>
+<Binary_Exp op="&lt;+" typref="3079309290" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:4:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:3:1:1:1:1">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:3:1:1:1:1">
+<Attr>
+<Pos s="6" l="90" c="9"/>
+</Attr>
+</Id>
+<Nary_Exp op="{">
+<Binary_Exp op="|->">
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:3:1:1:1:2">
+<Attr>
+<Pos s="11" l="90" c="16"/>
+</Attr>
+</Id>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:3:1:2:1">
+<Attr>
+<Pos s="12" l="90" c="32"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp op="-->" typref="3777709295">
+<Attr>
+<Pos s="3" l="20" c="20"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:4:2:1">
+<Attr>
+<Pos s="5" l="20" c="14"/>
+</Attr>
+</Id>
+<Id value="person" typref="917286058" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:4:2:2">
+<Attr>
+<Pos s="6" l="20" c="24"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+<iapa/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Invariant is preserved</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=">=">
+<Attr>
+<Pos s="2" l="21" c="52"/>
+</Attr>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="21" c="38"/>
+</Attr>
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:1">
+<Attr>
+<Pos s="10" l="21" c="28"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="555065967">
+<Attr>
+<Pos s="0" l="21" c="45"/>
+</Attr>
+<Binary_Exp op="&lt;+" typref="3079309290" tag=",C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:1,C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:3:1:1:1:1">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:3:1:1:1:1">
+<Attr>
+<Pos s="6" l="90" c="9"/>
+</Attr>
+</Id>
+<Nary_Exp op="{">
+<Binary_Exp op="|->">
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:3:1:1:1:2">
+<Attr>
+<Pos s="11" l="90" c="16"/>
+</Attr>
+</Id>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:3:1:2:1">
+<Attr>
+<Pos s="12" l="90" c="32"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:2">
+<Attr>
+<Pos s="3" l="21" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="21" c="62"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:1">
+<Attr>
+<Pos s="7" l="21" c="55"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="1714691695">
+<Attr>
+<Pos s="0" l="21" c="67"/>
+</Attr>
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:1">
+<Attr>
+<Pos s="4" l="21" c="63"/>
+</Attr>
+</Id>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:2">
+<Attr>
+<Pos s="3" l="21" c="68"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessConstraints</Tag>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessProperties</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Hypothesis>
+<Attr>
+<Pos s="4" l="9" c="1"/>
+</Attr>
+<Set>
+<Id value="CARDS" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:4:1:1">
+<Attr>
+<Pos s="5" l="10" c="5"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:4:2:1">
+<Attr>
+<Pos s="5" l="10" c="12"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="VISA" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:4:2:2:1">
+<Attr>
+<Pos s="4" l="10" c="21"/>
+</Attr>
+</Id>
+<Id value="VIRTUAL" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:4:2:2:2">
+<Attr>
+<Pos s="7" l="10" c="27"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+</Hypothesis>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="12" c="13"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:6:1:1:1">
+<Attr>
+<Pos s="7" l="12" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="112170744">
+<Attr>
+<Pos s="3" l="12" c="21"/>
+</Attr>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:6:1:1:2:1">
+<Attr>
+<Pos s="5" l="12" c="15"/>
+</Attr>
+</Id>
+<Id value="NATURAL" typref="3603043417" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:6:1:1:2:2">
+<Attr>
+<Pos s="7" l="12" c="25"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInvariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=>">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="21" c="17"/>
+</Attr>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:1:1">
+<Attr>
+<Pos s="3" l="21" c="13"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:1:2">
+<Attr>
+<Pos s="5" l="21" c="19"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:2">
+<Attr>
+<Pos s="3" l="21" c="46"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:1">
+<Attr>
+<Pos s="6" l="21" c="39"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:1">
+<Attr>
+<Pos s="6" l="21" c="39"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:1">
+<Attr>
+<Pos s="6" l="21" c="39"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:1">
+<Attr>
+<Pos s="6" l="21" c="39"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Binary_Exp op="(" typref="555065967">
+<Attr>
+<Pos s="0" l="21" c="45"/>
+</Attr>
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:1">
+<Attr>
+<Pos s="6" l="21" c="39"/>
+</Attr>
+</Id>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:2:2">
+<Attr>
+<Pos s="3" l="21" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Unary_Exp op="dom">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:1">
+<Attr>
+<Pos s="10" l="21" c="28"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:1">
+<Attr>
+<Pos s="10" l="21" c="28"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:1">
+<Attr>
+<Pos s="10" l="21" c="28"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:1:1">
+<Attr>
+<Pos s="10" l="21" c="28"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:2">
+<Attr>
+<Pos s="3" l="21" c="68"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:1">
+<Attr>
+<Pos s="4" l="21" c="63"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:1">
+<Attr>
+<Pos s="4" l="21" c="63"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:1">
+<Attr>
+<Pos s="4" l="21" c="63"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:1">
+<Attr>
+<Pos s="4" l="21" c="63"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Binary_Exp op="(" typref="1714691695">
+<Attr>
+<Pos s="0" l="21" c="67"/>
+</Attr>
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:1">
+<Attr>
+<Pos s="4" l="21" c="63"/>
+</Attr>
+</Id>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:2:2">
+<Attr>
+<Pos s="3" l="21" c="68"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Unary_Exp op="dom">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:1">
+<Attr>
+<Pos s="7" l="21" c="55"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:1">
+<Attr>
+<Pos s="7" l="21" c="55"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:1">
+<Attr>
+<Pos s="7" l="21" c="55"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:5:2:1:2:2:1">
+<Attr>
+<Pos s="7" l="21" c="55"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op=":" initialTag="((holder) : (((cards) --> (person))))">
+<Attr>
+<Pos s="1" l="20" c="12"/>
+</Attr>
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:4:1">
+<Attr>
+<Pos s="6" l="20" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="3777709295">
+<Attr>
+<Pos s="3" l="20" c="20"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:4:2:1">
+<Attr>
+<Pos s="5" l="20" c="14"/>
+</Attr>
+</Id>
+<Id value="person" typref="917286058" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:4:2:2">
+<Attr>
+<Pos s="6" l="20" c="24"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="3">
+<Exp_Comparison op=":" initialTag="((type) : (((cards) --> (TYPES))))">
+<Attr>
+<Pos s="1" l="19" c="10"/>
+</Attr>
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:3:1">
+<Attr>
+<Pos s="4" l="19" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="2714425715">
+<Attr>
+<Pos s="3" l="19" c="18"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:3:2:1">
+<Attr>
+<Pos s="5" l="19" c="12"/>
+</Attr>
+</Id>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:3:2:2">
+<Attr>
+<Pos s="5" l="19" c="22"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="4">
+<Exp_Comparison op=":" initialTag="((iban) : (((cards) --> (STR))))">
+<Attr>
+<Pos s="1" l="18" c="10"/>
+</Attr>
+<Id value="iban" typref="1674400392" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:1">
+<Attr>
+<Pos s="4" l="18" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="3390175739">
+<Attr>
+<Pos s="3" l="18" c="18"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:2:1">
+<Attr>
+<Pos s="5" l="18" c="12"/>
+</Attr>
+</Id>
+<Id value="STR" typref="116733260" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:2:2:2">
+<Attr>
+<Pos s="3" l="18" c="22"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="5">
+<Exp_Comparison op="&lt;:" initialTag="cards : POW( CARDS)">
+<Attr>
+<Pos s="2" l="17" c="11"/>
+</Attr>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:1:1">
+<Attr>
+<Pos s="5" l="17" c="5"/>
+</Attr>
+</Id>
+<Id value="CARDS" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:7:1:1:2">
+<Attr>
+<Pos s="5" l="17" c="14"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInitialisation</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_create_cards</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="32" c="22"/>
+</Attr>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:3:1">
+<Attr>
+<Pos s="12" l="32" c="9"/>
+</Attr>
+</Id>
+<Id value="person" typref="917286058" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:3:2">
+<Attr>
+<Pos s="6" l="32" c="24"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="31" c="20"/>
+</Attr>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:2:1">
+<Attr>
+<Pos s="10" l="31" c="9"/>
+</Attr>
+</Id>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:2:2">
+<Attr>
+<Pos s="5" l="31" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="3">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="30" c="20"/>
+</Attr>
+<Id value="iban_value" typref="2678451703" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:1:1">
+<Attr>
+<Pos s="10" l="30" c="9"/>
+</Attr>
+</Id>
+<Id value="STR" typref="116733260" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:1:2">
+<Attr>
+<Pos s="3" l="30" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:4:1:2">
+<Attr>
+<Pos s="12" l="33" c="20"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:4:1:1">
+<Attr>
+<Pos s="10" l="33" c="9"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:4:1:1">
+<Attr>
+<Pos s="10" l="33" c="9"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:4:1:1">
+<Attr>
+<Pos s="10" l="33" c="9"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:4:1:1">
+<Attr>
+<Pos s="10" l="33" c="9"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:4:2:2">
+<Attr>
+<Pos s="10" l="33" c="45"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:4:2:1">
+<Attr>
+<Pos s="7" l="33" c="37"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:4:2:1">
+<Attr>
+<Pos s="7" l="33" c="37"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:4:2:1">
+<Attr>
+<Pos s="7" l="33" c="37"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:3:1:4:2:1">
+<Attr>
+<Pos s="7" l="33" c="37"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_create_cards</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="20"/>
+</Attr>
+<Id value="iban_value" typref="2678451703" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:1:1">
+<Attr>
+<Pos s="10" l="33" c="9"/>
+</Attr>
+</Id>
+<Id value="STR" typref="116733260" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:1:2">
+<Attr>
+<Pos s="3" l="33" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="34" c="20"/>
+</Attr>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:2:1">
+<Attr>
+<Pos s="10" l="34" c="9"/>
+</Attr>
+</Id>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:2:2">
+<Attr>
+<Pos s="5" l="34" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="35" c="22"/>
+</Attr>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:3:1">
+<Attr>
+<Pos s="12" l="35" c="9"/>
+</Attr>
+</Id>
+<Id value="person" typref="917286058" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:3:2">
+<Attr>
+<Pos s="6" l="35" c="24"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=">=">
+<Attr>
+<Pos s="2" l="36" c="34"/>
+</Attr>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="36" c="19"/>
+</Attr>
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:4:1:1">
+<Attr>
+<Pos s="10" l="36" c="9"/>
+</Attr>
+</Id>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:4:1:2">
+<Attr>
+<Pos s="12" l="36" c="20"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="36" c="44"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:4:2:1">
+<Attr>
+<Pos s="7" l="36" c="37"/>
+</Attr>
+</Id>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:1:3:1:4:2:2">
+<Attr>
+<Pos s="10" l="36" c="45"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="36" c="19"/>
+</Attr>
+<Id value="crd" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:2:1:1">
+<Attr>
+<Pos s="3" l="36" c="15"/>
+</Attr>
+</Id>
+<Binary_Exp op="-" typref="3240719902">
+<Attr>
+<Pos s="1" l="36" c="27"/>
+</Attr>
+<Id value="CARDS" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:2:1:2:1">
+<Attr>
+<Pos s="5" l="36" c="21"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:1:4:1:2:1:2:2">
+<Attr>
+<Pos s="5" l="36" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_get_iban</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_get_iban</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="50" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:2:3:1:1">
+<Attr>
+<Pos s="11" l="50" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:2:3:1:2">
+<Attr>
+<Pos s="5" l="50" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:2:4:1:2:1:2">
+<Attr>
+<Pos s="11" l="49" c="28"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id value="iban" typref="1674400392" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:2:4:1:2:1:1">
+<Attr>
+<Pos s="4" l="49" c="23"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Id value="iban" typref="1674400392" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:2:4:1:2:1:1">
+<Attr>
+<Pos s="4" l="49" c="23"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="iban" typref="1674400392" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:2:4:1:2:1:1">
+<Attr>
+<Pos s="4" l="49" c="23"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="iban" typref="1674400392" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:2:4:1:2:1:1">
+<Attr>
+<Pos s="4" l="49" c="23"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_get_type</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_get_type</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="57" c="20"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:3:3:1:1">
+<Attr>
+<Pos s="11" l="57" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:3:3:1:2">
+<Attr>
+<Pos s="5" l="57" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:3:4:1:2:1:2">
+<Attr>
+<Pos s="11" l="56" c="28"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:3:4:1:2:1:1">
+<Attr>
+<Pos s="4" l="56" c="23"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:3:4:1:2:1:1">
+<Attr>
+<Pos s="4" l="56" c="23"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:3:4:1:2:1:1">
+<Attr>
+<Pos s="4" l="56" c="23"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:3:4:1:2:1:1">
+<Attr>
+<Pos s="4" l="56" c="23"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_get_holder</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_get_holder</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="64" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:4:3:1:1">
+<Attr>
+<Pos s="11" l="64" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:4:3:1:2">
+<Attr>
+<Pos s="5" l="64" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:4:4:1:2:1:2">
+<Attr>
+<Pos s="11" l="63" c="32"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:4:4:1:2:1:1">
+<Attr>
+<Pos s="6" l="63" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:4:4:1:2:1:1">
+<Attr>
+<Pos s="6" l="63" c="25"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:4:4:1:2:1:1">
+<Attr>
+<Pos s="6" l="63" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:4:4:1:2:1:1">
+<Attr>
+<Pos s="6" l="63" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_set_cards_iban</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="68" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:5:2:1:1:1">
+<Attr>
+<Pos s="11" l="68" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:5:2:1:1:2">
+<Attr>
+<Pos s="5" l="68" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_set_cards_iban</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="71" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:5:2:1:1:1">
+<Attr>
+<Pos s="11" l="71" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:5:2:1:1:2">
+<Attr>
+<Pos s="5" l="71" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="72" c="20"/>
+</Attr>
+<Id value="iban_value" typref="2678451703" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:5:2:1:2:1">
+<Attr>
+<Pos s="10" l="72" c="9"/>
+</Attr>
+</Id>
+<Id value="STR" typref="116733260" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:5:2:1:2:2">
+<Attr>
+<Pos s="3" l="72" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_set_cards_type</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="77" c="20"/>
+</Attr>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:2:1">
+<Attr>
+<Pos s="10" l="77" c="9"/>
+</Attr>
+</Id>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:2:2">
+<Attr>
+<Pos s="5" l="77" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="76" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:1:1">
+<Attr>
+<Pos s="11" l="76" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:1:2">
+<Attr>
+<Pos s="5" l="76" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:1:2:2">
+<Attr>
+<Pos s="11" l="78" c="27"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:1:2:1">
+<Attr>
+<Pos s="6" l="78" c="20"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:1:2:1">
+<Attr>
+<Pos s="6" l="78" c="20"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:1:2:1">
+<Attr>
+<Pos s="6" l="78" c="20"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:1:2:1">
+<Attr>
+<Pos s="6" l="78" c="20"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Binary_Exp op="(" typref="555065967">
+<Attr>
+<Pos s="0" l="78" c="26"/>
+</Attr>
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:1:2:1">
+<Attr>
+<Pos s="6" l="78" c="20"/>
+</Attr>
+</Id>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:1:2:2">
+<Attr>
+<Pos s="11" l="78" c="27"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Unary_Exp op="dom">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:1:1">
+<Attr>
+<Pos s="10" l="78" c="9"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:1:1">
+<Attr>
+<Pos s="10" l="78" c="9"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:1:1">
+<Attr>
+<Pos s="10" l="78" c="9"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:1:1">
+<Attr>
+<Pos s="10" l="78" c="9"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:2:2">
+<Attr>
+<Pos s="10" l="78" c="52"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:2:1">
+<Attr>
+<Pos s="7" l="78" c="44"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:2:1">
+<Attr>
+<Pos s="7" l="78" c="44"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:2:1">
+<Attr>
+<Pos s="7" l="78" c="44"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:6:2:1:3:2:1">
+<Attr>
+<Pos s="7" l="78" c="44"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_set_cards_type</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="79" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:1:1">
+<Attr>
+<Pos s="11" l="79" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:1:2">
+<Attr>
+<Pos s="5" l="79" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="80" c="20"/>
+</Attr>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:2:1">
+<Attr>
+<Pos s="10" l="80" c="9"/>
+</Attr>
+</Id>
+<Id value="TYPES" typref="4180697172" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:2:2">
+<Attr>
+<Pos s="5" l="80" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=">=">
+<Attr>
+<Pos s="2" l="81" c="41"/>
+</Attr>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="81" c="19"/>
+</Attr>
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:3:1:1">
+<Attr>
+<Pos s="10" l="81" c="9"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="555065967">
+<Attr>
+<Pos s="0" l="81" c="26"/>
+</Attr>
+<Id value="holder" typref="3079309290" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:3:1:2:1">
+<Attr>
+<Pos s="6" l="81" c="20"/>
+</Attr>
+</Id>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:3:1:2:2">
+<Attr>
+<Pos s="11" l="81" c="27"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="81" c="51"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:3:2:1">
+<Attr>
+<Pos s="7" l="81" c="44"/>
+</Attr>
+</Id>
+<Id value="type_value" typref="1714691695" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:6:2:1:3:2:2">
+<Attr>
+<Pos s="10" l="81" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_set_cards_holder</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="86" c="22"/>
+</Attr>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:2:1">
+<Attr>
+<Pos s="12" l="86" c="9"/>
+</Attr>
+</Id>
+<Id value="person" typref="917286058" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:2:2">
+<Attr>
+<Pos s="6" l="86" c="24"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="85" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:1:1">
+<Attr>
+<Pos s="11" l="85" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:1:2">
+<Attr>
+<Pos s="5" l="85" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:1:2">
+<Attr>
+<Pos s="12" l="87" c="20"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:1:1">
+<Attr>
+<Pos s="10" l="87" c="9"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:1:1">
+<Attr>
+<Pos s="10" l="87" c="9"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:1:1">
+<Attr>
+<Pos s="10" l="87" c="9"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:1:1">
+<Attr>
+<Pos s="10" l="87" c="9"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:2:2:2">
+<Attr>
+<Pos s="11" l="87" c="50"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:2:2:1">
+<Attr>
+<Pos s="4" l="87" c="45"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:2:2:1">
+<Attr>
+<Pos s="4" l="87" c="45"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:2:2:1">
+<Attr>
+<Pos s="4" l="87" c="45"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:2:2:1">
+<Attr>
+<Pos s="4" l="87" c="45"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Binary_Exp op="(" typref="1714691695">
+<Attr>
+<Pos s="0" l="87" c="49"/>
+</Attr>
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:2:2:1">
+<Attr>
+<Pos s="4" l="87" c="45"/>
+</Attr>
+</Id>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:2:2:2">
+<Attr>
+<Pos s="11" l="87" c="50"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Unary_Exp op="dom">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:2:1">
+<Attr>
+<Pos s="7" l="87" c="37"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Well definedness</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="1"/>
+</Nary_Pred>
+<Exp_Comparison op=":">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:2:1">
+<Attr>
+<Pos s="7" l="87" c="37"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->">
+<Unary_Exp op="dom">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:2:1">
+<Attr>
+<Pos s="7" l="87" c="37"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran">
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:9:7:2:1:3:2:1">
+<Attr>
+<Pos s="7" l="87" c="37"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State passList="Force(0),?" proofState="Proved(0)" methodList="pr"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_set_cards_holder</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="88" c="21"/>
+</Attr>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:1:1">
+<Attr>
+<Pos s="11" l="88" c="9"/>
+</Attr>
+</Id>
+<Id value="cards" typref="3240719902" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:1:2">
+<Attr>
+<Pos s="5" l="88" c="23"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="89" c="22"/>
+</Attr>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:2:1">
+<Attr>
+<Pos s="12" l="89" c="9"/>
+</Attr>
+</Id>
+<Id value="person" typref="917286058" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:2:2">
+<Attr>
+<Pos s="6" l="89" c="24"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=">=">
+<Attr>
+<Pos s="2" l="90" c="34"/>
+</Attr>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="90" c="19"/>
+</Attr>
+<Id value="person_age" typref="3435983791" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:3:1:1">
+<Attr>
+<Pos s="10" l="90" c="9"/>
+</Attr>
+</Id>
+<Id value="holder_value" typref="555065967" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:3:1:2">
+<Attr>
+<Pos s="12" l="90" c="20"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op="(" typref="2701647786">
+<Attr>
+<Pos s="0" l="90" c="44"/>
+</Attr>
+<Id value="min_age" typref="55458379" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:3:2:1">
+<Attr>
+<Pos s="7" l="90" c="37"/>
+</Attr>
+</Id>
+<Binary_Exp op="(" typref="1714691695">
+<Attr>
+<Pos s="0" l="90" c="49"/>
+</Attr>
+<Id value="type" typref="1550672528" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:3:2:2:1">
+<Attr>
+<Pos s="4" l="90" c="45"/>
+</Attr>
+</Id>
+<Id value="cards_value" typref="1718442021" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:10:7:2:1:3:2:2:2">
+<Attr>
+<Pos s="11" l="90" c="50"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+</Proof_Obligation>
+<TypeInfos>
+<Type id="3240719902">
+<Unary_Exp op="POW">
+<Id value="CARDS" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:1:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="4180697172">
+<Unary_Exp op="POW">
+<Id value="TYPES" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:2:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="1714691695">
+<Id value="TYPES" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:3:1"/>
+</Type>
+<Type id="55458379">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="TYPES" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:4:1:1:1"/>
+<Id value="INTEGER" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:4:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1674400392">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="CARDS" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:5:1:1:1"/>
+<Id value="STR" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:5:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1550672528">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="CARDS" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:6:1:1:1"/>
+<Id value="TYPES" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:6:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3079309290">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="CARDS" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:7:1:1:1"/>
+<Id value="PERSON" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:7:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="112170744">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="TYPES" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:8:1:1:1:1"/>
+<Id value="INTEGER" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:8:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id value="INTEGER" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:9:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="3223677880">
+<Binary_Exp op="*">
+<Id value="TYPES" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:10:1:1"/>
+<Id value="INTEGER" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:10:1:2"/>
+</Binary_Exp>
+</Type>
+<Type id="2701647786">
+<Id value="INTEGER" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:11:1"/>
+</Type>
+<Type id="3390175739">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="CARDS" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:12:1:1:1:1"/>
+<Id value="STR" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:12:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="116733260">
+<Unary_Exp op="POW">
+<Id value="STR" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:13:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="2714425715">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="CARDS" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:14:1:1:1:1"/>
+<Id value="TYPES" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:14:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3777709295">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="CARDS" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:15:1:1:1:1"/>
+<Id value="PERSON" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:15:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="917286058">
+<Unary_Exp op="POW">
+<Id value="PERSON" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:16:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="1718442021">
+<Id value="CARDS" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:17:1"/>
+</Type>
+<Type id="3435983791">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="PERSON" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:18:1:1:1"/>
+<Id value="INTEGER" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:18:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="555065967">
+<Id value="PERSON" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:19:1"/>
+</Type>
+<Type id="3817003670">
+<Unary_Exp op="POW">
+<Generic_Type tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:20:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="2678451703">
+<Id value="STR" tag="C:\Users\Adriana\Desktop\metode-formale\Payments\bdp\Card.bxml:1:11:21:1"/>
+</Type>
+<Type id="116733260">
+<Unary_Exp op="POW">
+<Id value="STR" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\String.bxml:1:3:1:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="917286058">
+<Unary_Exp op="POW">
+<Id value="PERSON" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:1:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="2989697570">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="PERSON" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:2:1:1:1"/>
+<Id value="STR" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:2:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3435983791">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="PERSON" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:3:1:1:1"/>
+<Id value="INTEGER" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:3:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2122796599">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="PERSON" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:4:1:1:1:1"/>
+<Id value="STR" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:4:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="116733260">
+<Unary_Exp op="POW">
+<Id value="STR" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:5:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="351536106">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="PERSON" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:6:1:1:1:1"/>
+<Id value="INTEGER" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:6:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id value="INTEGER" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:7:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="3817003670">
+<Unary_Exp op="POW">
+<Generic_Type tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:8:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="555065967">
+<Id value="PERSON" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:9:1"/>
+</Type>
+<Type id="2678451703">
+<Id value="STR" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:10:1"/>
+</Type>
+<Type id="2701647786">
+<Id value="INTEGER" tag="C:/Users/Adriana/Desktop/metode-formale/Payments/bdp\Person.bxml:1:7:11:1"/>
+</Type>
+</TypeInfos>
+</Proof_Obligations>

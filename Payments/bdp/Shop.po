@@ -1,0 +1,53 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(3) & _f(11) & _f(17) & WellDefinedness_get_shop_region.2,(_f(28) => _f(32));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(17) & WellDefinedness_get_shop_region.1,(_f(28) => _f(31));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(17) & WellDefinedness_get_shop_name.2,(_f(28) => _f(30));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(17) & WellDefinedness_get_shop_name.1,(_f(28) => _f(29));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(20) & set_shop_region.1,(_f(4) & _f(9) => _f(21));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(18) & set_shop_name.1,(_f(4) & _f(7) => _f(19));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(12) & create_shop.3,(_f(13) & _f(4) & _f(9) => _f(16));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(12) & create_shop.2,(_f(13) & _f(4) & _f(7) => _f(15));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(12) & create_shop.1,(_f(13) & _f(4) & _f(5) => _f(14));
+_f(1) & _f(2) & _f(3) & Initialisation.3,(_f(4) & _f(9) => _f(10));
+_f(1) & _f(2) & _f(3) & Initialisation.2,(_f(4) & _f(7) => _f(8));
+_f(1) & _f(2) & _f(3) & Initialisation.1,(_f(4) & _f(5) => _f(6))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+STR: FIN(INTEGER) & not(STR = {});
+SHOP: FIN(INTEGER) & not(SHOP = {}) & ((1..4)*{REGIONS}): FIN(NATURAL*{REGIONS}) & not(((1..4)*{REGIONS}) = {});
+"Invariant is preserved";
+"Check invariant shop : POW( SHOP)";
+{} : POW( SHOP);
+"Check invariant ((name) : (((shop) --> (STR))))";
+(({}) : ((({}) --> (STR))));
+"Check invariant ((region) : (((shop) --> (REGIONS))))";
+(({}) : ((({}) --> (((1..4)*{REGIONS})))));
+shop : POW( SHOP) & name : shop +-> STR & dom(name) = shop & ((name) : (((shop) --> (STR)))) & region : shop +-> ((1..4)*{REGIONS}) & dom(region) = shop & ((region) : (((shop) --> (((1..4)*{REGIONS})))));
+((name_value) : (STR)) & ((region_value) : (((1..4)*{REGIONS})));
+((sh) : ((SHOP - shop)));
+((shop) \/ (({sh}))) : POW( SHOP);
+((((name) <+ (({((sh) |-> (name_value))})))) : (((((shop) \/ (({sh})))) --> (STR))));
+((((region) <+ (({((sh) |-> (region_value))})))) : (((((shop) \/ (({sh})))) --> (((1..4)*{REGIONS})))));
+((shop_value) : (shop));
+((shop_value) : (shop)) & ((name_value) : (STR));
+((((name) <+ (({((shop_value) |-> (name_value))})))) : (((shop) --> (STR))));
+((shop_value) : (shop)) & ((region_value) : (((1..4)*{REGIONS})));
+((((region) <+ (({((shop_value) |-> (region_value))})))) : (((shop) --> (((1..4)*{REGIONS})))));
+SHOP: FIN(INTEGER) & not(SHOP = {});
+name : shop +-> STR;
+dom(name) = shop;
+((name) : (((shop) --> (STR))));
+shop : POW( SHOP);
+((name_value) : (STR));
+"Well definedness";
+((shop_value) : (dom(name)));
+((name) : (((dom(name)) +-> (ran(name)))));
+((shop_value) : (dom(region)));
+((region) : (((dom(region)) +-> (ran(region)))))
+END
+&
+THEORY EnumerateX IS
+REGIONS == {AFRICA,EUROPE,USA,ASIA}
+END

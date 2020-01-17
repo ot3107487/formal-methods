@@ -1,0 +1,118 @@
+<Machine name='System' type='abstraction'>
+<Includes>
+<Attr>
+<Pos l='3' c='1' s='8'/>
+</Attr>
+<Referenced_Machine>
+<Attr>
+<Pos l='4' c='5' s='7'/>
+</Attr>
+<Name>Payment</Name>
+</Referenced_Machine>
+</Includes>
+<Promotes>
+<Attr>
+<Pos l='5' c='1' s='8'/>
+</Attr>
+<Promoted_Operation>
+<Attr>
+<Pos l='6' c='5' s='14'/>
+</Attr>cancel_payment
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='7' c='5' s='14'/>
+</Attr>create_payment
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='7' c='21' s='16'/>
+</Attr>get_payment_card
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='7' c='39' s='16'/>
+</Attr>get_payment_shop
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='7' c='57' s='18'/>
+</Attr>get_payment_amount
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='7' c='76' s='16'/>
+</Attr>set_payment_card
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='7' c='94' s='16'/>
+</Attr>set_payment_shop
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='7' c='112' s='18'/>
+</Attr>set_payment_amount
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='8' c='5' s='12'/>
+</Attr>create_cards
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='8' c='19' s='8'/>
+</Attr>get_iban
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='8' c='29' s='8'/>
+</Attr>get_type
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='8' c='39' s='10'/>
+</Attr>get_holder
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='8' c='51' s='14'/>
+</Attr>set_cards_iban
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='8' c='67' s='14'/>
+</Attr>set_cards_type
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='8' c='83' s='16'/>
+</Attr>set_cards_holder
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='9' c='5' s='13'/>
+</Attr>create_person
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='9' c='20' s='15'/>
+</Attr>get_person_name
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='9' c='37' s='14'/>
+</Attr>get_person_age
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='9' c='53' s='15'/>
+</Attr>set_person_name
+</Promoted_Operation>
+</Promotes>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<TypeInfos/>
+
+</Machine>

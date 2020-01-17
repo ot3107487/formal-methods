@@ -1,0 +1,13 @@
+digraph {
+Card [ label=" Card " shape= box ]
+Payment [ label=" Payment " shape= box ]
+Person [ label=" Person " shape= box ]
+Shop [ label=" Shop " shape= box ]
+String [ label=" String " shape= box ]
+System [ label=" System " shape= box ]
+
+"Card" -> "String" [style= dotted ]
+"Payment" -> "String" [style= dotted ]
+"Person" -> "String" [style= dotted ]
+"Shop" -> "String" [style= dotted ]
+}

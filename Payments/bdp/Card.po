@@ -1,0 +1,117 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_set_cards_holder.6,(_f(31) & _f(56) & _f(59) => _f(63));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_set_cards_holder.5,(_f(31) & _f(56) & _f(59) => _f(72));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_set_cards_holder.4,(_f(31) & _f(56) & _f(59) => _f(68));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_set_cards_holder.3,(_f(31) & _f(56) & _f(59) => _f(67));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_set_cards_holder.2,(_f(31) & _f(56) & _f(59) => _f(61));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_set_cards_holder.1,(_f(31) & _f(56) & _f(59) => _f(60));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_set_cards_type.6,(_f(31) & _f(57) & _f(59) => _f(63));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_set_cards_type.5,(_f(31) & _f(57) & _f(59) => _f(62));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_set_cards_type.4,(_f(31) & _f(57) & _f(59) => _f(61));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_set_cards_type.3,(_f(31) & _f(57) & _f(59) => _f(71));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_set_cards_type.2,(_f(31) & _f(57) & _f(59) => _f(70));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_set_cards_type.1,(_f(31) & _f(57) & _f(59) => _f(69));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(31) & WellDefinedness_get_holder.2,(_f(59) => _f(70));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(31) & WellDefinedness_get_holder.1,(_f(59) => _f(69));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(31) & WellDefinedness_get_type.2,(_f(59) => _f(68));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(31) & WellDefinedness_get_type.1,(_f(59) => _f(67));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(31) & WellDefinedness_get_iban.2,(_f(59) => _f(66));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(31) & WellDefinedness_get_iban.1,(_f(59) => _f(65));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_create_cards.4,(_f(58) & _f(57) & _f(56) & _f(59) => _f(63));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_create_cards.3,(_f(58) & _f(57) & _f(56) & _f(59) => _f(62));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_create_cards.2,(_f(58) & _f(57) & _f(56) & _f(59) => _f(61));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & WellDefinedness_Precondition_create_cards.1,(_f(58) & _f(57) & _f(56) & _f(59) => _f(60));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(38) & set_cards_holder.2,(_f(35) & _f(13) => _f(40));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(38) & set_cards_holder.1,(_f(13) & _f(18) => _f(39));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(34) & set_cards_type.2,(_f(35) & _f(13) => _f(37));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(34) & set_cards_type.1,(_f(13) & _f(16) => _f(36));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(32) & set_cards_iban.1,(_f(13) & _f(26) => _f(33));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(22) & create_cards.5,(_f(24) & _f(23) & _f(13) => _f(30));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(22) & create_cards.4,(_f(24) & _f(13) & _f(18) => _f(29));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(22) & create_cards.3,(_f(24) & _f(13) & _f(16) => _f(28));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(22) & create_cards.2,(_f(24) & _f(13) & _f(26) => _f(27));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & _f(21) & _f(22) & create_cards.1,(_f(24) & _f(13) & _f(14) => _f(25));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & Initialisation.4,(_f(7) & _f(8) & _f(9) & _f(10) & _f(11) & _f(9) & _f(12) & _f(6) & _f(13) => _f(20));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & Initialisation.3,(_f(7) & _f(8) & _f(9) & _f(10) & _f(11) & _f(9) & _f(12) & _f(13) & _f(18) => _f(19));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & Initialisation.2,(_f(7) & _f(8) & _f(9) & _f(10) & _f(11) & _f(9) & _f(12) & _f(13) & _f(16) => _f(17));
+_f(1) & _f(2) & _f(3) & _f(4) & _f(5) & Initialisation.1,(_f(7) & _f(8) & _f(9) & _f(10) & _f(11) & _f(9) & _f(12) & _f(13) & _f(14) => _f(15))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+STR: FIN(INTEGER) & not(STR = {});
+CARDS: FIN(INTEGER) & not(CARDS = {}) & ((1..2)*{TYPES}): FIN(NATURAL*{TYPES}) & not(((1..2)*{TYPES}) = {}) & min_age : ((1..2)*{TYPES}) +-> NATURAL & dom(min_age) = ((1..2)*{TYPES}) & ((min_age) : (((((1..2)*{TYPES})) --> (NATURAL)))) & ((min_age) = (({(((1|->TYPES)) |-> (22))}\/{(((2|->TYPES)) |-> (14))})));
+PERSON: FIN(INTEGER) & not(PERSON = {});
+person : POW( PERSON) & person_name : person +-> STR & dom(person_name) = person & ((person_name) : (((person) --> (STR)))) & person_age : person +-> NATURAL & dom(person_age) = person & ((person_age) : (((person) --> (NATURAL))));
+((crd) : ({}));
+{} : POW( PERSON);
+{} : {} +-> STR;
+dom({}) = {};
+(({}) : ((({}) --> (STR))));
+{} : {} +-> NATURAL;
+(({}) : ((({}) --> (NATURAL))));
+"Invariant is preserved";
+"Check invariant cards : POW( CARDS)";
+{} : POW( CARDS);
+"Check invariant ((type) : (((cards) --> (TYPES))))";
+(({}) : ((({}) --> (((1..2)*{TYPES})))));
+"Check invariant ((holder) : (((cards) --> (person))))";
+(({}) : ((({}) --> ({}))));
+((min_age )(({} )(crd)) <= ({} )(({} )(crd)));
+cards : POW( CARDS) & iban : cards +-> STR & dom(iban) = cards & ((iban) : (((cards) --> (STR)))) & type : cards +-> ((1..2)*{TYPES}) & dom(type) = cards & ((type) : (((cards) --> (((1..2)*{TYPES}))))) & holder : cards +-> person & dom(holder) = cards & ((holder) : (((cards) --> (person)))) & !(crd).(((((crd) : (cards))) => (((min_age )((type )(crd)) <= (person_age )((holder )(crd))))));
+((iban_value) : (STR)) & ((type_value) : (((1..2)*{TYPES}))) & ((holder_value) : (person)) & ((min_age )(type_value) <= (person_age )(holder_value));
+((crd$2) : (((cards) \/ (({crd$1})))));
+((crd$1) : ((CARDS - cards)));
+((cards) \/ (({crd$1}))) : POW( CARDS);
+"Check invariant ((iban) : (((cards) --> (STR))))";
+((((iban) <+ (({((crd$1) |-> (iban_value))})))) : (((((cards) \/ (({crd$1})))) --> (STR))));
+((((type) <+ (({((crd$1) |-> (type_value))})))) : (((((cards) \/ (({crd$1})))) --> (((1..2)*{TYPES})))));
+((((holder) <+ (({((crd$1) |-> (holder_value))})))) : (((((cards) \/ (({crd$1})))) --> (person))));
+((min_age )((((type) <+ (({((crd$1) |-> (type_value))}))) )(crd$2)) <= (person_age )((((holder) <+ (({((crd$1) |-> (holder_value))}))) )(crd$2)));
+((cards_value) : (cards));
+((cards_value) : (cards)) & ((iban_value) : (STR));
+((((iban) <+ (({((cards_value) |-> (iban_value))})))) : (((cards) --> (STR))));
+((cards_value) : (cards)) & ((type_value) : (((1..2)*{TYPES}))) & ((min_age )(type_value) <= (person_age )((holder )(cards_value)));
+((crd) : (cards));
+((((type) <+ (({((cards_value) |-> (type_value))})))) : (((cards) --> (((1..2)*{TYPES})))));
+((min_age )((((type) <+ (({((cards_value) |-> (type_value))}))) )(crd)) <= (person_age )((holder )(crd)));
+((cards_value) : (cards)) & ((holder_value) : (person)) & ((min_age )((type )(cards_value)) <= (person_age )(holder_value));
+((((holder) <+ (({((cards_value) |-> (holder_value))})))) : (((cards) --> (person))));
+((min_age )((type )(crd)) <= (person_age )((((holder) <+ (({((cards_value) |-> (holder_value))}))) )(crd)));
+CARDS: FIN(INTEGER) & not(CARDS = {});
+min_age : ((1..2)*{TYPES}) +-> NATURAL;
+dom(min_age) = ((1..2)*{TYPES});
+((min_age) : (((((1..2)*{TYPES})) --> (NATURAL))));
+((((crd) : (cards))) => (((crd) : (dom(holder))) & ((holder) : (((dom(holder)) +-> (ran(holder))))) & (((holder )(crd)) : (dom(person_age))) & ((person_age) : (((dom(person_age)) +-> (ran(person_age))))) & ((crd) : (dom(type))) & ((type) : (((dom(type)) +-> (ran(type))))) & (((type )(crd)) : (dom(min_age))) & ((min_age) : (((dom(min_age)) +-> (ran(min_age)))))));
+holder : cards +-> person;
+dom(holder) = cards;
+((holder) : (((cards) --> (person))));
+type : cards +-> ((1..2)*{TYPES});
+dom(type) = cards;
+((type) : (((cards) --> (((1..2)*{TYPES})))));
+iban : cards +-> STR;
+dom(iban) = cards;
+((iban) : (((cards) --> (STR))));
+cards : POW( CARDS);
+((holder_value) : (person));
+((type_value) : (((1..2)*{TYPES})));
+((iban_value) : (STR));
+"Well definedness";
+((holder_value) : (dom(person_age)));
+((person_age) : (((dom(person_age)) +-> (ran(person_age)))));
+((type_value) : (dom(min_age)));
+((min_age) : (((dom(min_age)) +-> (ran(min_age)))));
+((crd) : ((CARDS - cards)));
+((cards_value) : (dom(iban)));
+((iban) : (((dom(iban)) +-> (ran(iban)))));
+((cards_value) : (dom(type)));
+((type) : (((dom(type)) +-> (ran(type)))));
+((cards_value) : (dom(holder)));
+((holder) : (((dom(holder)) +-> (ran(holder)))));
+(((holder )(cards_value)) : (dom(person_age)));
+(((type )(cards_value)) : (dom(min_age)))
+END
+&
+THEORY EnumerateX IS
+TYPES == {VISA,VIRTUAL}
+END
